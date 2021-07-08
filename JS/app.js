@@ -26,7 +26,7 @@ Usuario.prototype.addBook = function (book, autor) {
 };
 
 Usuario.prototype.getBook = function () {
-  return this.libros;
+  return this.libros.map((libro)=>libro.nombre);
 };
 
 const juan = new Usuario(
